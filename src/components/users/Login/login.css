@@ -34,38 +34,12 @@
     outline: none;
 }
 
-.login-form button{
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-.login-form button:hover{
-    background-color: #3e8e41;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-.login-container::before{
+.login-container{
     content: "";
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: url("../../../assets/img/naebula.png") no-repeat center center;
+    background: url("../../../assets/img/galaxy.png") no-repeat center center;
     background-size: cover;
     z-index: -1;
 }
@@ -77,4 +51,30 @@
 .login-form:hover{
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: inset 0px 0px 4px 2px #00bfff;
+}
+
+.login-title{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* Button Animation */
+.login-form button {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border: 2px solid #34495e;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #34495e;
+    transform: translateY(-2px);
+}
+
+.login-form button:active {
+    transform: translateY(0);
 }
