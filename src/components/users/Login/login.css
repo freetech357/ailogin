@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form{
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 4px 2px forestgreen
+}
+
+.login-form h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #927f7f;
+    outline: none;
+}
+
+.login-form button{
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-form button:hover{
+    background-color: #3e8e41;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.login-container::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: url("../../../assets/img/naebula.png") no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+.login-container:hover{
+    background: url("../../../assets/img/sun.png") no-repeat center center;
+    background-size: cover;
+}
+
+.login-form:hover{
+    box-shadow: inset 0px 0px 4px 2px #00bfff;
+    background-color: transparent;
+}
