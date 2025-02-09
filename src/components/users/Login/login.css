@@ -16,7 +16,8 @@
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: inset 0px 0px 4px 2px forestgreen
+    box-shadow: inset 0px 0px 4px 2px forestgreen;
+    background-color: transparent;
 }
 
 .login-form h2{
@@ -74,6 +75,6 @@
 }
 
 .login-form:hover{
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: inset 0px 0px 4px 2px #00bfff;
-    background-color: transparent;
 }
