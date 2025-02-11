@@ -1,0 +1,39 @@
+.DocSearch-Button-Container {
+    align-items: center;
+    display: flex;
+}
+
+.DocSearch-Button {
+    --docsearch-searchbox-background: rgba(0, 0, 0, 0.1);
+    --docsearch-searchbox-color: #fff;
+    --docsearch-searchbox-focus-background: rgba(0, 0, 0, 0.25);
+    --docsearch-searchbox-shadow: 0 0 0 0.25rem rgba(255, 228, 132, 0.4);
+    --docsearch-text-color: #fff;
+    --docsearch-muted-color: rgba(255, 255, 255, 0.65);
+    width: 100%;
+    height: 38px;
+    margin: 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: .375rem;
+}
+
+@media (min-width: 992px) {
+    .bd-search {
+        position: absolute;
+        top: .875rem;
+        left: 50%;
+        width: 200px;
+        margin-left: -100px;
+    }
+}
+
+[type="button"]{
+    cursor: pointer;
+}
+
+.DocSearch {
+    display: flex;
+    justify-content: flex-end;
+    width: 14.5rem;
+}
+
